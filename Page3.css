@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: blue;
+  width: 100vw;
+}
+.container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: repeat(5, 20%);
+  grid-template-areas:
+    "header header"
+    "line1 line1"
+    "img2 line2"
+    "img3 line3"
+    "img4 line4";
+  line-height: 1.5;
+}
+.header {
+  grid-area: header;
+  width: 100vw;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+.img2 {
+  grid-area: img2;
+}
+h3 {
+  padding-bottom: 5px;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+}
+.line1 {
+  grid-area: line1;
+  padding-top: 20px;
+}
+.line2 {
+  grid-area: line2;
+}
+.line3 {
+  grid-area: line3;
+}
+.line4 {
+  grid-area: line4;
+}
+.mainImg {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
